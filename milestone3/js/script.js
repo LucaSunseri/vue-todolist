@@ -47,12 +47,16 @@ const app = new Vue({
     
     removeItem(index) {
       this.items.splice(index,1);
-      console.log('clicco');
+      // console.log('clicco');
     },
 
     addItem() {
       this.items.push(this.itemToAdd);
-      console.log(this.items);
+      // console.log(this.items);
+      this.itemToAdd = {
+        str: '',
+        done: false
+      };
     }
 
   }
