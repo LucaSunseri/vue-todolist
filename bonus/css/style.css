@@ -57,7 +57,7 @@ body {
   top:-10px;
 }
 
-.post-it:hover,ul li:focus {
+.post-it:hover, .post-it:focus {
   box-shadow:10px 10px 7px rgba(0,0,0,.7);
   transform: scale(1.25);
   position:relative;
