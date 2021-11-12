@@ -24,8 +24,11 @@
         <div class="post-it">
           <div class="post-it__text item">
             <h2>New Post-it</h2>
-            <p><input v-model="itemToAdd.str" type="text" placeholder="Aggiungi cose da fare"></p>
-            <p class="error-message">{{errorMessage}}</p>
+            <input 
+              v-model="itemToAdd.str" type="text" placeholder="Aggiungi cose da fare" 
+              @keyup.enter="addItem"
+            >
+            <p id="error-message">{{errorMessage}}</p>
           </div>
           <i class="fas fa-plus-circle" @click="addItem"></i>
         </div>

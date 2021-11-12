@@ -26,7 +26,7 @@ const app = new Vue({
         done: false
       },
       {
-        str: 'Sare da mangiare al gatto',
+        str: 'Dare da mangiare al gatto',
         done: true
       },
       {
