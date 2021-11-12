@@ -139,6 +139,7 @@ h1 {
   right: 10px;
   font-size: 20px;
   color: black;
+  z-index: 999;
 }
 
 .main__container .post-it i:hover {
