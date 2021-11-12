@@ -7,70 +7,12 @@
 
 body {
   margin: 20px auto;
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   background:#666;
   color:#fff;
 }
 
-
-/* HEADER */
-h1 {
-  text-align: center;
-  margin: 15px 0 50px 0;
-}
-
-.header__container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.container__header input {
-  width: 75%;
-  line-height: 25px;
-  border: 1px solid black;
-  border-radius: 10px;
-}
-
-.header__container .post-it i {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: black;
-}
-
-.header__container .post-it i:hover {
-  cursor: pointer;
-  user-select: none;
-  color: blue;
-}
-
-.error-message {
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  color: red;
-  margin-top: 20px;
-}
-
-
-/* MAIN */
-.main__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-h2 {
-  font-weight: bold;
-  font-size: 2rem;
-}
-
-p {
-  font-family: 'Reenie Beanie';
-  font-size: 2rem;
-}
-
+/* POST-IT template */
 .post-it {
   position: relative;
   color:#000;
@@ -87,6 +29,16 @@ p {
 
 .post-it__text.done {
   text-decoration: line-through;
+}
+
+.post-it__text h2 {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.post-it__text p {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 2rem;
 }
 
 .post-it:nth-child(even) {
@@ -114,6 +66,62 @@ p {
   transform: scale(1.25);
   position:relative;
   z-index:5;
+}
+/* END POST-IT template */
+
+
+/* HEADER */
+h1 {
+  text-align: center;
+  margin: 15px 0 50px 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.header__container .post-it {
+  transform: none;
+}
+
+.header__container .post-it:hover {
+  transform: scale(1.25);
+}
+
+.header__container input {
+  line-height: 35px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.header__container .post-it i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: black;
+}
+
+.header__container .post-it i:hover {
+  cursor: pointer;
+  user-select: none;
+  color: blue;
+}
+
+.error-message {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  margin-top: 20px;
+}
+
+/* MAIN */
+.main__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .main__container .post-it i {
