@@ -55,6 +55,8 @@ const app = new Vue({
       this.errorMessage = '';
       if (this.itemToAdd.str.length < 3){
         this.errorMessage = `Inserisci almeno 3 caratteri`;
+      } else if (this.itemToAdd.str.length > 40){
+        this.errorMessage = `Hai superato il numero massimo di caratteri`;
       } else {
         this.items.push(this.itemToAdd);
         this.itemToAdd = {
