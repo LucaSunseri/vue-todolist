@@ -27,11 +27,11 @@ const app = new Vue({
       },
       {
         str: 'Sare da mangiare al gatto',
-        done: false
+        done: true
       },
       {
         str: 'Comprare il latte',
-        done: false
+        done: true
       },
       {
         str: 'Video call alle 18:00',
