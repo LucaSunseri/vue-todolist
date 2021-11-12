@@ -39,12 +39,13 @@
     <main>
       <div class="main__container">
 
-        <div class="post-it" v-for="(item,index) in items">
-          <div 
-            class="post-it__text item"
-            :class="{done: (item.done === true)}"
-            @click="item.done = !item.done"
-          >
+        <div 
+          class="post-it" 
+          :class="{done: (item.done === true)}"
+          v-for="(item,index) in items"
+          @click="item.done = !item.done"
+        >
+          <div class="post-it__text item">
             <h2>Post-it n°{{index +1}}</h2>
             <p>{{item.str}}</p>
           </div>

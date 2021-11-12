@@ -27,8 +27,14 @@ body {
   margin:1em;
 }
 
-.post-it__text.done {
-  text-decoration: line-through;
+.post-it.done::after {
+  content: '\2714';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 200px;
+  color: rgba(1, 224, 1, 0.733);
 }
 
 .post-it__text h2 {
